@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "name": "pm2-java",
+      "cwd": ".",
+      "script": "java",
+      "args": [
+        "-jar",
+        "./build/libs/java-pm2-test.jar"
+      ],
+      "watch": [
+        "./build/libs/java-pm2-test.jar"
+      ],
+      "node_args": [],
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "exec_interpreter": "",
+      "exec_mode": "fork"
+    }
+  ]
+}
